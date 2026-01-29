@@ -1,0 +1,330 @@
+
+#navbar {
+    display: flex;
+    align-items: center;
+
+    z-index: 1;
+    position: fixed;
+    top: 0%;
+
+    width: 100%;
+    height: 10vh;
+    
+    background-color: rgb(16, 16, 33);
+    border-radius: 1vw;
+    color: white;
+  
+    gap: 1vw;
+}
+
+#navbar p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
+    padding-left: 2vw;
+}
+
+#navbar a {
+    
+    text-decoration: none;
+    color: white;
+
+    padding-left: 1.5vw;
+    gap: 1vw;
+}
+
+#background {
+    background-image: url(https://img.freepik.com/free-vector/zigzag-lines-pattern-black-background_1017-37483.jpg);
+    width: 98vw;
+    height: 98vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#header {
+    position: absolute;
+    top: 10vh;
+
+    justify-self: center;
+    display: flex;
+
+    font-size: 9vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+
+}
+
+#selected-champ {
+    position: absolute;
+    left: 11.5vw;
+    top: 36vh;
+
+    width: 10vw;
+    height: 4vh;
+}
+
+#zed-vsimg {
+    position: relative;
+    left: 6.5vw;
+    top: 42vh;
+
+    border: solid silver ;
+    border-radius: 0.2vw;
+
+    width: 10vw;
+    height: 50vh;
+
+    background-image: url(images/Zed_0.jpg);
+    background-position-x: 65%;
+    background-position-y: 10%;
+
+    justify-items: center;
+}
+
+#vs-img {
+    position: absolute;
+    right: -40%;
+    top: 29%;
+
+    height: auto;
+    width: 8vw;
+    z-index: 2;
+
+}
+
+#enemy-img {
+    position: relative;
+    left: 10vw;
+    bottom: 0.15625rem;
+
+    border: solid silver ;
+    border-radius: 0.2vw;
+
+    width: 10vw;
+    height: 50vh;
+
+    background-color: rgb(49, 49, 49);
+    
+}
+
+#rune-border {
+    position: absolute;
+    left: 33vw;
+    bottom: 10vh;
+
+    width: 30vw;
+    height: 40vh;
+
+    border: solid silver;
+    z-index: 2;
+    
+    background-color: rgb(49, 49, 49);
+}
+
+#build-border {
+    position: absolute;
+    left: 62.9vw;
+    bottom: 11.5vh;
+
+    width: 3.5vw;
+    height: 37vh;
+
+    border: solid silver;
+    border-radius: 0.5vw;
+    
+    background-color: rgb(49, 49, 49);
+
+    z-index: 1;
+}
+
+#info-border {
+    position: absolute;
+    right: 6vw;
+    bottom: 6vh;
+
+    width: 20vw;
+    height: 48vh;
+
+    border: solid silver;
+    border-radius: 0.5vw;
+
+    background-color: rgb(49, 49, 49);
+}
+
+#conq-build-opacity {
+    opacity: 0;
+}
+
+#conq-build {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border: solid   silver;
+    width: auto;
+    height: auto;
+    bottom: 10vh;
+    left: 33vw;
+    
+    z-index: 2;
+}
+
+#conq-build img {
+    width: 30vw;
+    height: 40vh;
+}
+
+#conq-build-img {
+    position: absolute;
+    left: 62.8vw;
+    bottom: 11.5vh;
+
+    display: grid;
+    gap: 0.6vh;
+    padding: 7px;
+    border-radius: 0.5vw;
+
+    background-color: rgb(29, 27, 50);
+    border: solid silver;
+
+    z-index: 1;
+}
+
+#conq-build-img img {
+    width: 2.7vw;
+    height: auto;
+}
+
+#first-strike-build-opacity {
+    opacity: 0;
+}
+
+#first-strike-build {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border: solid   silver;
+    width: auto;
+    height: auto;
+    bottom: 10vh;
+    left: 33vw;
+    
+    z-index: 2;
+}
+
+#first-strike-build img {
+    width: 30vw;
+    height: 40vh;
+}
+
+#first-strike-build-img {
+    position: absolute;
+    left: 62.8vw;
+    bottom: 11.5vh;
+
+    display: grid;
+    gap: 0.6vh;
+    padding: 7px;
+    border-radius: 0.5vw;
+
+    background-color: rgb(29, 27, 50);
+    border: solid silver;
+
+    z-index: 1;
+}
+
+#first-strike-build-img img {
+    width: 2.7vw;
+    height: auto; 
+}
+
+#electrocute-build-opacity {
+    opacity: 0;
+}
+
+#electrocute-build {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border: solid   silver;
+    width: auto;
+    height: auto;
+    bottom: 10vh;
+    left: 33vw;
+    
+    z-index: 2;
+}
+
+#electrocute-build img {
+    width: 30vw;
+    height: 40vh;
+}
+
+#electrocute-build-img {
+    position: absolute;
+    left: 62.8vw;
+    bottom: 11.5vh;
+
+    display: grid;
+    gap: 0.6vh;
+    padding: 7px;
+    border-radius: 0.5vw;
+
+    background-color: rgb(29, 27, 50);
+    border: solid silver;
+
+    z-index: 1;
+}
+
+#electrocute-build-img img {
+    width: 2.7vw;
+    height: auto; 
+}
+
+#arcane-comet-build-opacity {
+    opacity: 0;
+}
+
+#arcane-comet-build {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border: solid   silver;
+    width: auto;
+    height: auto;
+    bottom: 10vh;
+    left: 33vw;
+    
+    z-index: 2;
+}
+
+#arcane-comet-build img {
+    width: 30vw;
+    height: 40vh;
+}
+
+#arcane-comet-build-img {
+    position: absolute;
+    left: 62.8vw;
+    bottom: 11.5vh;
+
+    display: grid;
+    gap: 0.6vh;
+    padding: 7px;
+    border-radius: 0.5vw;
+
+    background-color: rgb(29, 27, 50);
+    border: solid silver;
+
+    z-index: 1;
+}
+
+#arcane-comet-build-img img {
+    width: 2.7vw;
+    height: auto; 
+}

@@ -1,0 +1,340 @@
+
+#navbar {
+    display: flex;
+    align-items: center;
+
+    z-index: 1;
+    position: fixed;
+    top: 0%;
+
+    width: 100%;
+    height: 10vh;
+    
+    background-color: rgb(16, 16, 33);
+    border-radius: 1vw; 
+    color: white;
+  
+    gap: 1vw;
+}
+
+#navbar p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
+    padding-left: 2vw;
+}
+
+#navbar a {
+    
+    text-decoration: none;
+    color: white;
+
+    padding-left: 1.5vw;
+    gap: 1vw;
+}
+
+#background {
+    background-image: url(https://img.freepik.com/free-vector/zigzag-lines-pattern-black-background_1017-37483.jpg);
+    width: 98vw;
+    height: 98vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#background-2 {
+    background-image: url(https://img.freepik.com/free-vector/zigzag-lines-pattern-black-background_1017-37483.jpg);
+    width: 98vw;
+    height: 98vh;
+    position: absolute;
+    top: 100vh;
+    
+}
+
+
+
+#header {
+    position: absolute;
+    color: white;
+    font-size: 15.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    pointer-events: none;
+    justify-self: center;
+    display: flex;
+    top: 0vh;
+}
+
+
+#conq-build {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border: solid   silver;
+    width: auto;
+    height: auto;
+    top: -10vh;
+    left: 10vw;
+    
+}
+
+#conq-build img {
+    width: 30vw;
+    height: 40vh;
+}
+
+#conq-build h3 {
+    position: absolute;
+    font-size: 1.6rem;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+#first-strike-build {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border: solid   silver;
+    width: auto;
+    height: auto;
+    top: -10vh;
+    right: 10vw;
+}
+
+#first-strike-build img {
+    width: 30vw;
+    height: 40vh;
+}
+
+#first-strike-build h3 {
+    position: absolute;
+    font-size: 1.6rem;  
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#electrocute-build {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border: solid   silver;
+    width: auto;
+    height: auto;
+    top: 45vh;
+    left: 10vw; 
+}
+
+#electrocute-build img {
+    width: 30vw;
+    height: 40vh;
+}
+
+#electrocute-build h3 {
+    position: absolute;
+    font-size: 1.6rem;  
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+#arcane-comet-build {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border: solid   silver;
+    top: 45vh;
+    right: 10vw;
+ 
+}
+
+#arcane-comet-build img {
+    width: 30vw;
+    height: 40vh;
+}
+
+#arcane-comet-build h3 {
+    position: absolute;
+    font-size: 1.6rem;  
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.question-mark-runes-left {
+    background-color: rgb(90, 90, 90); 
+    width: 2vw;
+    height: 4vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+
+    position: absolute;
+    top: -5%;
+    left: -3%;
+}
+
+.question-mark-runes-left:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.question-mark-runes-right {
+    background-color: rgb(90, 90, 90); 
+    width: 2vw;
+    height: 4vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+
+    position: absolute;
+    top: -5%;
+    right: -3%;
+}
+
+.question-mark-runes-right:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.information-builds-left {
+    display: flex;
+
+    position: absolute;
+    top: -52%;
+    left: -20%;
+    
+    border: solid silver;
+    padding: 1.1rem;
+    border-radius: 1.1rem;
+    background-color: rgb(74, 74, 74);
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+}
+
+.info-hover-left:hover .information-builds-left {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.information-builds-right {
+    display: flex;
+
+    position: absolute;
+    top: -52%;
+    right: -20%;
+    
+    border: solid silver;
+    padding: 1.1rem;
+    border-radius: 1.1rem;
+    background-color: rgb(74, 74, 74);
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+}
+
+.info-hover-right:hover .information-builds-right {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#conq-build-img {
+    position: absolute;
+    left: 40.9%;
+    top: -9%;
+
+    display: grid;
+    gap: 0.6vh;
+    padding: 7px;
+    border-radius: 0.5vw;
+
+    background-color: rgb(29, 27, 50);
+    border: solid silver;
+}
+
+#conq-build-img img {
+    width: 2.7vw;
+    height: auto;
+}
+
+#first-strike-build-img {
+    position: absolute;
+    right: 40.9%;
+    top: -9%;
+
+    display: grid;
+    gap: 0.6vh;
+    padding: 7px;
+    border-radius: 0.5vw;
+
+    background-color: rgb(29, 27, 50);
+    border: solid silver;
+}
+
+#first-strike-build-img img {
+    width: 2.7vw;
+    height: auto;
+}
+
+
+#arcane-comet-build-img {
+    position: absolute;
+    right: 40.9%;
+    top: 48%;
+
+    display: grid;
+    gap: 0.6vh;
+    padding: 7px;
+    border-radius: 0.5vw;
+
+    background-color: rgb(29, 27, 50);
+    border: solid silver;
+}
+
+#arcane-comet-build-img img {
+    width: 2.7vw;
+    height: auto;
+}
+
+#electrocute-build-img {
+    position: absolute;
+    left: 40.9%;
+    top: 48%;
+
+    display: grid;
+    gap: 0.6vh;
+    padding: 7px;
+    border-radius: 0.5vw;
+
+    background-color: rgb(29, 27, 50);
+    border: solid silver;
+}
+
+#electrocute-build-img img {
+    width: 2.7vw;
+    height: auto;
+}
