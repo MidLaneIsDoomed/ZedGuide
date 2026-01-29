@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
 
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     top: 0%;
 
@@ -35,7 +35,7 @@
 }
 
 #background {
-    background-image: url(https://img.freepik.com/free-vector/zigzag-lines-pattern-black-background_1017-37483.jpg);
+    background-image: url(images/dark-background-abstract-background-network-3d-background-3840x2160-8324.png);
     width: 98vw;
     height: 98vh;
     position: absolute;
@@ -44,7 +44,6 @@
 }
 
 #background-2 {
-    background-image: url(https://img.freepik.com/free-vector/zigzag-lines-pattern-black-background_1017-37483.jpg);
     width: 98vw;
     height: 98vh;
     position: absolute;
@@ -75,8 +74,9 @@
     width: auto;
     height: auto;
     top: -10vh;
-    left: 10vw;
+    left: 10.3vw;
     
+    z-index: 2;
 }
 
 #conq-build img {
@@ -102,7 +102,9 @@
     width: auto;
     height: auto;
     top: -10vh;
-    right: 10vw;
+    right: 10.3vw;
+
+    z-index: 2;
 }
 
 #first-strike-build img {
@@ -127,7 +129,9 @@
     width: auto;
     height: auto;
     top: 45vh;
-    left: 10vw; 
+    left: 10.3vw; 
+
+    z-index: 2;
 }
 
 #electrocute-build img {
@@ -151,8 +155,9 @@
     position: absolute;
     border: solid   silver;
     top: 45vh;
-    right: 10vw;
- 
+    right: 10.3vw;
+
+    z-index: 2;
 }
 
 #arcane-comet-build img {

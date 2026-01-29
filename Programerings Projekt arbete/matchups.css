@@ -35,7 +35,7 @@
 }
 
 #background {
-    background-image: url(https://img.freepik.com/free-vector/zigzag-lines-pattern-black-background_1017-37483.jpg);
+    background-image: url(images/dark-background-abstract-background-network-3d-background-3840x2160-8324.png);
     width: 98vw;
     height: 98vh;
     position: absolute;
@@ -51,6 +51,7 @@
     display: flex;
 
     font-size: 9vw;
+    font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 
@@ -63,6 +64,7 @@
 
     width: 10vw;
     height: 4vh;
+
 }
 
 #zed-vsimg {

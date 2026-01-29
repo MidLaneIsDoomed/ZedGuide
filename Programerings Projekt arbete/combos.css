@@ -35,7 +35,7 @@
 }
 
 #background {
-    background-image: url(https://img.freepik.com/free-vector/zigzag-lines-pattern-black-background_1017-37483.jpg);
+    background-image: url(images/dark-background-abstract-background-network-3d-background-3840x2160-8324.png);
     width: 98vw;
     height: 98vh;
     position: absolute;
@@ -73,7 +73,8 @@
 }
 
 .combo-buttons > * {
-    width: 120px;
+    width: 8.25vw;
+    height: 9vh;
 }
 
 .combo-buttons button {
@@ -88,7 +89,7 @@
     transform: scale(1.07);
     transition: 0.3s;
     z-index: 0;
-    background-color: red;
+    background-color: rgb(97, 1, 1);
 }
 
 .combo-buttons button:active {
@@ -96,12 +97,22 @@
     transition: 0.1s;
     opacity: 0.6;
     z-index: 1;
+    transform: scale(1.01);
 }
 
 .video-container {
     position: absolute;
-    right: 3vw;
-    bottom: 5vh;
-    border: 3px solid silver;
+    right: 15vw;
+    bottom: 20vh;
+    border: 6px solid silver;
     border-radius: 0.5vw;
+    width: 560px;
+    height: 315px;
+
+    background-color: rgb(49, 49, 49);
 }
+
+iframe {
+    display: none;
+}
+   

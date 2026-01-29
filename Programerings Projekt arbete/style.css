@@ -35,9 +35,8 @@
 }
 
 #background {
-    background-image: url(https://img.freepik.com/free-vector/zigzag-lines-pattern-black-background_1017-37483.jpg);
-    width: 98vw;
-    height: 98vh;
+    background-image: url(images/dark-background-abstract-background-network-3d-background-3840x2160-8324.png);
+    background-size: cover;
     position: absolute;
     left: 0;
     top: 0;
@@ -47,7 +46,7 @@
     position: absolute;
     width: 27vw;
     height: auto;
-    bottom: 0;
+    top: 27vh;
     left: 19vw;
 }
 
