@@ -174,8 +174,21 @@ html, body {
     background-color: rgb(49, 49, 49);
 }
 
-#conq-build-opacity {
+#conq-build-opacity,
+#first-strike-build-opacity,
+#electrocute-build-opacity,
+#arcane-comet-build-opacity {
     opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+#conq-build-opacity.build-active,
+#first-strike-build-opacity.build-active,
+#electrocute-build-opacity.build-active,
+#arcane-comet-build-opacity.build-active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 #conq-build {
@@ -218,10 +231,6 @@ html, body {
     height: auto;
 }
 
-#first-strike-build-opacity {
-    opacity: 0;
-}
-
 #first-strike-build {
     display: flex;
     color: white;
@@ -262,10 +271,6 @@ html, body {
     height: auto; 
 }
 
-#electrocute-build-opacity {
-    opacity: 0;
-}
-
 #electrocute-build {
     display: flex;
     color: white;
@@ -304,10 +309,6 @@ html, body {
 #electrocute-build-img img {
     width: 2.7vw;
     height: auto; 
-}
-
-#arcane-comet-build-opacity {
-    opacity: 0;
 }
 
 #arcane-comet-build {

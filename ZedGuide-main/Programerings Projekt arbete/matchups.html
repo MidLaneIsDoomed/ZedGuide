@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zed Guide</title>
     <link rel="stylesheet" href="matchups.css">
-    <script src="matchups.js" defer></script>
+    
 
 </head>
 <body id="background">
@@ -32,45 +32,46 @@
 
    <select name="matchup-select" id="selected-champ">
         <option value="">>-Choose Matchup-<</option>
-        <option class="electrocute" value="ahri">Ahri</option>
-        <option class="firststrike" value="akali">Akali</option>
-        <option class="conq" value="akshan">Akshan</option>
-        <option class="conq" value="anivia">Anivia</option>
-        <option class="conq" value="annie">Annie</option>
-        <option class="electrocute" value="aurelion_sol">Aurelion Sol</option>
-        <option class="conq" value="aurora">Aurora</option>
-        <option class="conq" value="azir">Azir</option>
-        <option class="firststrike" value="cassiopeia">Cassiopeia</option>
-        <option class="conq" value="diana">Diana</option>
-        <option class="electrocute" value="ekko">Ekko</option>
-        <option class="conq" value="fizz">Fizz</option>
-        <option class="firststrike" value="galio">Galio</option>
-        <option class="electrocute" value="heimerdinger">Heimerdinger</option>
-        <option class="electrocute" value="hwei">Hwei</option>
-        <option class="conq" value="irelia">Irelia</option>
-        <option class="firststrike" value="kassadin">Kassadin</option>
-        <option class="conq" value="katarina">Katarina</option>
-        <option class="electrocute" value="leblanc">LeBlanc</option>
-        <option class="conq" value="lissandra">Lissandra</option>
-        <option class="electrocute" value="lux">Lux</option>
-        <option class="conq" value="malzahar">Malzahar</option>
-        <option class="arcane-comet" value="mel">Mel</option>
-        <option class="firststrike" value="naafiri">Naafiri</option>
-        <option class="conq" value="neeko">Neeko</option>
-        <option class="electrocute" value="orianna">Orianna</option>
-        <option class="conq" value="qiyana">Qiyana</option>
-        <option class="conq" value="ryze">Ryze</option>
-        <option class="conq" value="swain">Swain</option>
-        <option class="firststrike" value="sylas">Sylas</option>
-        <option class="conq" value="syndra">Syndra</option>
-        <option class="conq" value="taliyah">Taliyah</option>
-        <option class="firststrike" value="talon">Talon</option>
-        <option class="electrocute" value="twisted_fate">Twisted Fate</option>
-        <option class="electrocute" value="veigar">Veigar</option>
-        <option class="electrocute" value="velkoz">Vel’Koz</option>
-        <option class="conq" value="vex">Vex</option>
-        <option class="electrocute" value="viktor">Viktor</option>
-        <option class="conq" value="vladimir">Vladimir</option>
+        <option data-target="electrocute-build-opacity" value="ahri">Ahri</option>
+        <option data-target="first-strike-build-opacity"  value="akali">Akali</option>
+        <option data-target="conq-build-opacity"  value="akshan">Akshan</option>
+        <option data-target="conq-build-opacity"  value="anivia">Anivia</option>
+        <option data-target="conq-build-opacity"  value="annie">Annie</option>
+        <option data-target="electrocute-build-opacity" value="aurelion_sol">Aurelion Sol</option>
+        <option data-target="conq-build-opacity"  value="aurora">Aurora</option>
+        <option data-target="conq-build-opacity"  value="azir">Azir</option>
+        <option data-target="first-strike-build-opacity"  value="cassiopeia">Cassiopeia</option>
+        <option data-target="conq-build-opacity"  value="diana">Diana</option>
+        <option data-target="electrocute-build-opacity" value="ekko">Ekko</option>
+        <option data-target="conq-build-opacity"  value="fizz">Fizz</option>
+        <option data-target="first-strike-build-opacity"  value="galio">Galio</option>
+        <option data-target="electrocute-build-opacity" value="heimerdinger">Heimerdinger</option>
+        <option data-target="electrocute-build-opacity" value="hwei">Hwei</option>
+        <option data-target="conq-build-opacity"  value="irelia">Irelia</option>
+        <option data-target="first-strike-build-opacity"  value="kassadin">Kassadin</option>
+        <option data-target="conq-build-opacity"  value="katarina">Katarina</option>
+        <option data-target="electrocute-build-opacity" value="leblanc">LeBlanc</option>
+        <option data-target="conq-build-opacity"  value="lissandra">Lissandra</option>
+        <option data-target="electrocute-build-opacity" value="lux">Lux</option>
+        <option data-target="conq-build-opacity"  value="malzahar">Malzahar</option>
+        <option data-target="arcane-comet-build-opacity" value="mel">Mel</option>
+        <option data-target="first-strike-build-opacity" value="naafiri">Naafiri</option>
+        <option data-target="conq-build-opacity"  value="neeko">Neeko</option>
+        <option data-target="electrocute-build-opacity" value="orianna">Orianna</option>
+        <option data-target="conq-build-opacity"  value="qiyana">Qiyana</option>
+        <option data-target="conq-build-opacity"  value="ryze">Ryze</option>
+        <option data-target="conq-build-opacity"  value="swain">Swain</option>
+        <option data-target="conq-build-opacity"  value="taliyah">Taliyah</option>
+        <option data-target="conq-build-opacity"  value="syndra">Syndra</option>
+        <option data-target="first-strike-build-opacity"  value="sylas">Sylas</option>
+        <option data-target="first-strike-build-opacity" value="talon">Talon</option>
+        <option data-target="electrocute-build-opacity" value="twisted_fate">Twisted Fate</option>
+        <option data-target="electrocute-build-opacity" value="veigar">Veigar</option>
+        <option data-target="electrocute-build-opacity" value="velkoz">Vel’Koz</option>
+        <option data-target="conq-build-opacity"  value="vex">Vex</option>
+        <option data-target="electrocute-build-opacity" value="viktor">Viktor</option>
+        <option data-target="conq-build-opacity" value="vladimir">Vladimir</option>
+        <option data-target="arcane-comet-build-opacity" value="xerath">Xerath</option>
    </select>
      
    <div id="conq-build-opacity">
@@ -79,12 +80,12 @@
         </div> 
 
         <div id="conq-build-img">
-                <img src="/images/Eclipse.webp" alt="">
-                <img src="/images/Voltaic.webp" alt="">
-                <img src="/images/seryldas grudge.webp" alt="">
-                <img src="/images/Spear_of_Shojin_item_old2.webp" alt="">
-                <img src="/images/EON.webp" alt="">
-                <img src="/images/Lucidity boots.png" alt="">
+                <img src="images/Eclipse.webp" alt="">
+                <img src="images/Voltaic.webp" alt="">
+                <img src="images/seryldas grudge.webp" alt="">
+                <img src="images/Spear_of_Shojin_item_old2.webp" alt="">
+                <img src="images/EON.webp" alt="">
+                <img src="images/Lucidity boots.png" alt="">
         </div>
    </div>
 
@@ -125,14 +126,15 @@
         </div>
 
         <div id="arcane-comet-build-img">
-            <img src="/images/Eclipse.webp" alt="">
-            <img src="/images/Voltaic.webp" alt="">
-            <img src="/images/seryldas grudge.webp" alt="">
-            <img src="/images/Spear_of_Shojin_item_old2.webp" alt="">
-            <img src="/images/EON.webp" alt="">
-            <img src="/images/Lucidity boots.png" alt="">
+            <img src="images/Eclipse.webp" alt="">
+            <img src="images/Voltaic.webp" alt="">
+            <img src="images/seryldas grudge.webp" alt="">
+            <img src="images/Spear_of_Shojin_item_old2.webp" alt="">
+            <img src="images/EON.webp" alt="">
+            <img src="images/Lucidity boots.png" alt="">
         </div>
    </div>
-    
+
+   <script src="matchups.js" defer></script>
 </body>
 </html>
