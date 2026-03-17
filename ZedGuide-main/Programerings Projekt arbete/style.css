@@ -19,17 +19,19 @@ html {
     display: flex;
     align-items: center;
 
-    z-index: 1;
+    z-index: 1000;
     top: 0%;
 
-    width: 100%;
+    width: 80%;
     height: 5vw;
     
     background-color: rgb(16, 16, 33);
-    border-radius: 1vw;
+    border-bottom-right-radius: 100% ;
     color: white;
   
     gap: 1vw;
+    background: rgba(10,10,30,0.85);
+    backdrop-filter: blur(8px);
 }
 
 #navbar p {
@@ -38,6 +40,7 @@ html {
     font-weight: bolder;
     
     padding-left: 2vw;
+    padding-right: 1.1vw;
 }
 
 #navbar a {
@@ -88,6 +91,7 @@ html {
 }
 
 #page-title {
+    margin-top: 8%;
     color: white;
     text-align: center;
     font-size: 11vw;
@@ -97,7 +101,6 @@ html {
 /* #region Subhead */
 
 #subhead-container {
-    /* position: relative; */
     justify-content: center;
     margin-top: 5%;
 
@@ -106,6 +109,7 @@ html {
 }
 
 .subhead-group {
+    position: relative;
     border: solid silver;
     border-radius: 0.7vw;
 
@@ -113,6 +117,7 @@ html {
     height: 18vw;
     
     text-align: center;
+    text-decoration: none;
 
     
     background-position: center;
@@ -121,26 +126,54 @@ html {
     padding-top: 6.2%;
     padding-left: 1%;
     padding-right: 1%;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.subhead-group a {
-    text-decoration: none;
+.subhead-group::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    transition: 0.3s;
+}
+
+.subhead-links {
+    position: relative;
+    z-index: 2;
+
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 3.5vw;
     font-weight: bold;
-    text-shadow: 3px 2px rgb(0, 0, 0)
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-shadow: 3px 2px 5px black;
+
+    transition: color 0.3s;
 }
 
 .subhead-group:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+     transform: scale(1.05);
+    box-shadow:
+        0 0 10px rgba(0,255,255,0.5),
+        0 0 20px rgba(0,255,255,0.4),
+        0 0 40px rgba(0,255,255,0.3);
 }
 
-.subhead-group a:hover {
+.subhead-group:hover::before {
+    background: rgba(0,0,0,0.25);
+}   
+
+.subhead-group:hover .subhead-links {
+    font-family:Georgia, 'Times New Roman', Times, serif;
     color: aqua;
-    transition: 0.3s;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow:
+        0 0 5px aqua,
+        0 0 10px aqua,
+        0 0 20px aqua;
 }
 
 .combos {
@@ -155,8 +188,8 @@ html {
     background-image: url(images/LoL-shopkeeper-blue.jpg);
 }
 
-/* #endregion */
 
+/* #endregion */ 
 
 #about-me {
     height: 41vw;
@@ -195,7 +228,7 @@ html {
 
 #dia-img-container {
     justify-self: center;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 #dia-img-container img {
