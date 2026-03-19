@@ -1,3 +1,4 @@
+/* #region header-region */
 
 * {
     margin: 0;
@@ -82,9 +83,6 @@ html {
     z-index: 2;
 }
 
-
-
-
 #first-section {
     margin-top: 80px;
 
@@ -97,6 +95,9 @@ html {
     font-size: 11vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/* #region end */
+
 
 /* #region Subhead */
 
@@ -188,9 +189,6 @@ html {
     background-image: url(images/LoL-shopkeeper-blue.jpg);
 }
 
-
-/* #endregion */ 
-
 #about-me {
     height: 41vw;
     width: 98vw;
@@ -239,48 +237,51 @@ html {
     border-radius: 3vw;
 }
 
-/* #main-acc-dia:hover {
- transition: 0.3s;
+/* #endregion */ 
 
- border: solid silver;
-}
+/* Mobile-Layout */
 
-#second-acc-dia:hover {
-    transition: 0.3s;
+@media (max-width: 1325px) {
+
+    #navbar {
+        height: 10vw;
+        width: 90%;
+    }
+
+    #navbar p {
+        font-size: 4vw;
+    }
+
+    #navbar a {
+        font-size: 2vw;
+    }
+
+    #page-title {
+        display: none;
+    }
+
+    /* #region-subhead */
    
-    border: solid silver;  
-} */
+    #subhead-container {
+        margin-top: 20%;
+        display: flex;
+        flex-wrap: wrap;  
+        width: 70vw;   
+        justify-self: center; 
+        text-align: center;
+        gap: 10vw;  
+    }
 
-/* #about-me-hyperlink {
-    display: flex;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;    
+    .subhead-group {
+        padding-top: 14.5%;
+        width: 30vw;
+        height: 27vw;
+    }
 
-    width: 8vw;
-    height: 8vw;
+    .subhead-links {
+        font-size: 5vw;
+    }
 
-    background-color: rgb(21, 21, 21);
-    padding: 5px 5px;
-    border-radius: 20vw;
-    border: solid  rgb(77, 14, 95) 3.5px;
+    /* #endregion */
 
-    font-size: 1.4vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(77, 14, 95);
-    text-decoration: none;
-
-    opacity: 0.9;
-
-    z-index: 1;
 }
-
-#about-me-hyperlink:hover {
-    opacity: 1;
-    transform: scale(1.02);
-    transition: 0.1s ease-out;
-} */
-
-/* section {
-    scroll-margin-top: 12vh;
-} */
